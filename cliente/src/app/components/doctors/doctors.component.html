@@ -1,0 +1,55 @@
+<h1>Doctores</h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-12 text-right">
+        <button [routerLink]="['/home']" class="btn btn-outline-danger">Regresar</button>
+        <button [routerLink]="['/doctor', 'new']" class="btn btn-outline-primary" type="button" name="button">
+          Nuevo Doctor
+      </button>
+    </div>
+</div>
+<br><br>
+
+<div class="row animated fadeIn fast">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Code</th>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Celular</th>
+                        <th class="text-right">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let doctor of doctors">
+                        <td>{{ doctor.code }}</td>
+                        <td>{{ doctor.idNumber }}</td>
+                        <td>{{ doctor.name }}</td>
+                        <td>{{ doctor.mail }}</td>
+                        <td>{{ doctor.mobilePhone }}</td>
+                        <td class="text-right w230">
+                            <button [routerLink]="['/doctor', doctor.code ]" type="button" class="btn btn-outline-success">
+                              Editar
+                          </button>
+                            <button (click)="deleteDoctor(doctor.code)" type="button" class="btn btn-outline-danger">
+                              Eliminar
+                          </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div *ngIf="(doctors).length === 0 && !loading" class="alert alert-info" role="alert">
+                <strong>no hay</strong> registros que mostrar
+            </div>
+
+            <div *ngIf="loading" class="alert alert-warning" role="alert">
+                <strong>cargando</strong> por favor espere
+            </div>
+        </div>
+    </div>
+</div>

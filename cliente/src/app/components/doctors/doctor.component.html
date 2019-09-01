@@ -1,0 +1,30 @@
+<h3>Doctor <small>nombre</small></h3>
+<button [routerLink]="['/doctors']" class="btn btn-outline-danger">Regresar</button>
+<button (click)="addNew(forma)" type="button" class="btn btn-outline-success">Nuevo Doctor</button>
+<div class="row animated fadeIn fast">
+    <div class="col-md-12">
+        <form (ngSubmit)="createDoctor(forma)" #forma="ngForm" novalidate="">
+            <div class="form-group">
+                <label>Identificacion</label>
+                <input [(ngModel)]="doctor.idNumber" name="idNumber" type="text" class="form-control" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input [(ngModel)]="doctor.name" name="name" type="text" class="form-control" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label>Celular</label>
+                <input [(ngModel)]="doctor.mobilePhone" name="mobilePhone" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Correo</label>
+                <input [(ngModel)]="doctor.mail" name="mail" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <button [disabled]="!forma.valid" type="submit" class="btn btn-outline-primary">
+                  Guardar Cambios
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

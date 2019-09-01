@@ -1,0 +1,13 @@
+<h3>Modulos</h3>
+<div class="row animated fadeIn fast">
+    <div class="card-group">
+        <div *ngFor="let module of modules">
+            <div class="card body border-dark mb-3 text-center" style="width: 15rem; padding-top: 10px;">
+                <i class="{{ module.image}}  display: inline-block;"></i>
+                <h5 class="card-title text-center bg-dark">
+                    <a href="/doctors">{{module.name}}</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
