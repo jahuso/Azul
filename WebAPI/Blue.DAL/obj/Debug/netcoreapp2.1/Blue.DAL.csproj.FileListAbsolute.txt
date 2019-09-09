@@ -7,6 +7,3 @@ F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.1\Blue.DAL.AssemblyInfo.cs
 F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.1\Blue.DAL.dll
 F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.1\Blue.DAL.pdb
 F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.1\Blue.DAL.csprojAssemblyReference.cache
-F:\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.1\Blue.Model.dll
-F:\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.1\Blue.Model.pdb
-F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.1\Blue.DAL.csproj.CopyComplete

@@ -1,9 +1,0 @@
-F:\Azul\WebAPI\Blue.Model\obj\Debug\netcoreapp2.1\Blue.Model.csprojAssemblyReference.cache
-F:\Azul\WebAPI\Blue.Model\obj\Debug\netcoreapp2.1\Blue.Model.csproj.CoreCompileInputs.cache
-F:\Azul\WebAPI\Blue.Model\obj\Debug\netcoreapp2.1\Blue.Model.AssemblyInfoInputs.cache
-F:\Azul\WebAPI\Blue.Model\obj\Debug\netcoreapp2.1\Blue.Model.AssemblyInfo.cs
-F:\Azul\WebAPI\Blue.Model\bin\Debug\netcoreapp2.1\Blue.Model.deps.json
-F:\Azul\WebAPI\Blue.Model\bin\Debug\netcoreapp2.1\Blue.Model.dll
-F:\Azul\WebAPI\Blue.Model\bin\Debug\netcoreapp2.1\Blue.Model.pdb
-F:\Azul\WebAPI\Blue.Model\obj\Debug\netcoreapp2.1\Blue.Model.dll
-F:\Azul\WebAPI\Blue.Model\obj\Debug\netcoreapp2.1\Blue.Model.pdb

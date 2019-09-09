@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Blue.DAL;
+using Blue.DAL.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +38,10 @@ namespace WebAPI
             services.AddCors();
             services.AddDbContext<DoctorsContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
             services.AddDbContext<ModuleContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
+            services.AddDbContext<BlueDBContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
+            //services.AddTransient<IDoctorRepository, DoctorRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            //services.AddScoped(typeof(IDoctorRepository<>), typeof(DoctorRepository<>));
 
         }
 

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
+using Blue.DAL.Interface;
+using Blue.DAL;
 
 namespace WebAPI.Controllers
 {
@@ -13,30 +15,37 @@ namespace WebAPI.Controllers
     [ApiController]
     public class DoctorController : ControllerBase
     {
-        private readonly DoctorsContext _context;
+        //private readonly IDoctorRepository _doctorRepository;
+        private readonly IGenericRepository<Doctor> _genericRepository;
 
-        public DoctorController(DoctorsContext context)
+
+        //public DoctorController(IDoctorRepository doctorRepository)
+        //{
+        //    _doctorRepository = doctorRepository;
+        //}
+
+        public DoctorController(IGenericRepository<Doctor> genericRepository)
         {
-            _context = context;
+            _genericRepository = genericRepository;
         }
 
         // GET: api/Doctor
         [HttpGet]
-        public IEnumerable<Doctor> GetDoctor()
+        public Task<IEnumerable<Doctor>> GetDoctor()
         {
-            return _context.Doctor;
+            return _genericRepository.GetAll();
         }
 
         // GET: api/Doctor/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetDoctor([FromRoute] int id)
+        public IActionResult GetDoctor([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var doctor = await _context.Doctor.FindAsync(id);
+            var doctor = _genericRepository.GetbyId(id);
 
             if (doctor == null)
             {
@@ -60,11 +69,9 @@ namespace WebAPI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(doctor).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await _genericRepository.Update(doctor);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -81,45 +88,42 @@ namespace WebAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Doctor
+        //// POST: api/Doctor
         [HttpPost]
-        public async Task<IActionResult> PostDoctor([FromBody] Doctor doctor)
+        public IActionResult PostDoctor([FromBody] Doctor doctor)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Doctor.Add(doctor);
-            await _context.SaveChangesAsync();
-
+            _genericRepository.Add(doctor);
             return CreatedAtAction("GetDoctor", new { id = doctor.Code }, doctor);
         }
 
-        // DELETE: api/Doctor/5
+        //// DELETE: api/Doctor/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDoctor([FromRoute] int id)
+        public IActionResult DeleteDoctor([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var doctor = await _context.Doctor.FindAsync(id);
+            var doctor = _genericRepository.GetbyId(id);
             if (doctor == null)
             {
                 return NotFound();
             }
 
-            _context.Doctor.Remove(doctor);
-            await _context.SaveChangesAsync();
+            _genericRepository.Delete(doctor);
 
             return Ok(doctor);
         }
 
         private bool DoctorExists(int id)
         {
-            return _context.Doctor.Any(e => e.Code == id);
+            return _genericRepository.Exists(id);
         }
     }
 }

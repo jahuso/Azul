@@ -1,0 +1,9 @@
+F:\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.deps.json
+F:\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.dll
+F:\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.pdb
+F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.csproj.CoreCompileInputs.cache
+F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfoInputs.cache
+F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfo.cs
+F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.dll
+F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.pdb
+F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.csprojAssemblyReference.cache
