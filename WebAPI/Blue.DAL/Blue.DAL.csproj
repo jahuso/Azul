@@ -5,7 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DoctorsContext.cs" />
+    <Compile Remove="Migrations\20190909203313_Extendedv3..cs" />
+    <Compile Remove="Migrations\20190909203313_Extendedv3..Designer.cs" />
+    <Compile Remove="Migrations\20190909203351_Extendedv4.cs" />
+    <Compile Remove="Migrations\20190909203351_Extendedv4.Designer.cs" />
+    <Compile Remove="ModuleContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore.relational\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

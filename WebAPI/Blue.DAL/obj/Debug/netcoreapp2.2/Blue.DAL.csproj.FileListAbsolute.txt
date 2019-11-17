@@ -6,4 +6,3 @@ F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfoInputs.cach
 F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfo.cs
 F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.dll
 F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.pdb
-F:\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.csprojAssemblyReference.cache

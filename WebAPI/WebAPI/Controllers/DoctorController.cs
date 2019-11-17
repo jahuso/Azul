@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using Blue.DAL;
+using Blue.DAL.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WebAPI.Models;
-using Blue.DAL.Interface;
-using Blue.DAL;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
@@ -15,14 +11,7 @@ namespace WebAPI.Controllers
     [ApiController]
     public class DoctorController : ControllerBase
     {
-        //private readonly IDoctorRepository _doctorRepository;
         private readonly IGenericRepository<Doctor> _genericRepository;
-
-
-        //public DoctorController(IDoctorRepository doctorRepository)
-        //{
-        //    _doctorRepository = doctorRepository;
-        //}
 
         public DoctorController(IGenericRepository<Doctor> genericRepository)
         {
@@ -46,7 +35,6 @@ namespace WebAPI.Controllers
             }
 
             var doctor = _genericRepository.GetbyId(id);
-
             if (doctor == null)
             {
                 return NotFound();
@@ -117,7 +105,6 @@ namespace WebAPI.Controllers
             }
 
             _genericRepository.Delete(doctor);
-
             return Ok(doctor);
         }
 

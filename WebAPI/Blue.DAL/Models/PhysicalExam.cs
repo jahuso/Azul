@@ -1,27 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebAPI.Models
+namespace Blue.DAL
 {
     public class PhysicalExam
     {
-        public string ID { get; set; }
-        public string HistoryDetail { get; set; }
+        [Key]
+        public int ID { get; set; }
+        [Required]
+        [Column(TypeName = "int")]
+        public int DetailID { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(3)")]
         public string HearthFrequency { get; set; }
-        public string BreathFrequency { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(3)")]
+        public string BreathingFrequency { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(6)")]
         public string ArterialPresure { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(10)")]
         public string Temperature { get; set; }
-        public string SAT02 { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(3)")]
+        public string O2SAT { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(3)")]
         public string Weight { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(4)")]
         public string Height { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
         public string NeurologicalStatus { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
         public string HeadandShoulder { get; set; }
-        public string CardioPulmonar { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
+        public string PulmonaryCardio { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
         public string Abdomen { get; set; }
-        public string GenitoUrinal { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
+        public string GenitoUrinary { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
         public string Limbs { get; set; }
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
         public string Skin { get; set; }
     }
 }

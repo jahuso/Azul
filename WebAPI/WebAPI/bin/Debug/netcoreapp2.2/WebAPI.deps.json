@@ -346,7 +346,8 @@
       },
       "Blue.DAL/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.2.0"
+          "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0"
         },
         "runtime": {
           "Blue.DAL.dll": {}
