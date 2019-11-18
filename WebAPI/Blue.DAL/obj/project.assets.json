@@ -2971,11 +2971,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
+      "projectUniqueName": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
       "projectName": "Blue.DAL",
-      "projectPath": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
+      "projectPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
       "packagesPath": "C:\\Users\\JOSE GABRIEL AHUMADA\\.nuget\\packages\\",
-      "outputPath": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\obj\\",
+      "outputPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

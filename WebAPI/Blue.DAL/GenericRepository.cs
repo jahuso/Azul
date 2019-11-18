@@ -52,7 +52,6 @@ namespace Blue.DAL
         public bool Exists(int id)
         {
             return _dbContext.Doctor.Any(e => e.Code == id);
-
         }
     }
 }

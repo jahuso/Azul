@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\angular\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "C:\\pers\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj": {
+    "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
+        "projectUniqueName": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
         "projectName": "Blue.DAL",
-        "projectPath": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
+        "projectPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
         "packagesPath": "C:\\Users\\JOSE GABRIEL AHUMADA\\.nuget\\packages\\",
-        "outputPath": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\obj\\",
+        "outputPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\angular\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj": {
+    "C:\\pers\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\angular\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\pers\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\angular\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\pers\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\JOSE GABRIEL AHUMADA\\.nuget\\packages\\",
-        "outputPath": "C:\\angular\\Azul\\WebAPI\\WebAPI\\obj\\",
+        "outputPath": "C:\\pers\\Azul\\WebAPI\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -96,8 +96,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj": {
-                "projectPath": "C:\\angular\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj"
+              "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj": {
+                "projectPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj"
               }
             }
           }
