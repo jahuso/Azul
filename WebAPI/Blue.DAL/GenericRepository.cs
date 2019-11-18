@@ -1,8 +1,11 @@
 ﻿using Blue.DAL.Interface;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using WebAPI.Models;
 
 namespace Blue.DAL
 {
@@ -13,7 +16,7 @@ namespace Blue.DAL
 
         public GenericRepository(BlueDBContext context)
         {
-            this._dbContext = context;
+            this._dbContext =context;
             this._dbSet = this._dbContext.Set<T>();
         }
 
@@ -48,8 +51,8 @@ namespace Blue.DAL
 
         public bool Exists(int id)
         {
-            return _dbContext<T>.Find. .Any(e => e.Code == id);
-        }
+            return _dbContext.Doctor.Any(e => e.Code == id);
 
+        }
     }
 }

@@ -1,9 +1,12 @@
-﻿using Blue.DAL;
-using Blue.DAL.Interface;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Blue.DAL;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
@@ -11,55 +14,58 @@ namespace WebAPI.Controllers
     [ApiController]
     public class ModuleController : ControllerBase
     {
-        private readonly IGenericRepository<Module> _genericRepository;
+        private readonly ModuleContext _context;
 
-        public ModuleController(IGenericRepository<Module> genericRepository)
+        public ModuleController(ModuleContext context)
         {
-            _genericRepository = genericRepository;
+            _context = context;
         }
 
         // GET: api/Module
         [HttpGet]
-        public Task<IEnumerable<Module>> GetModule()
+        public IEnumerable<Module> GetModule()
         {
-            return _genericRepository.GetAll();
+            return _context.Module;
         }
 
         // GET: api/Module/5
         [HttpGet("{id}")]
-        public IActionResult GetModule([FromRoute] int id)
+        public async Task<IActionResult> GetModule([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var _module = _genericRepository.GetbyId(id);
-            if (_module == null)
+            var @module = await _context.Module.FindAsync(id);
+
+            if (@module == null)
             {
                 return NotFound();
             }
 
-            return Ok(_module);
+            return Ok(@module);
         }
 
         // PUT: api/Module/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutModule([FromRoute] int id, [FromBody] Module _module)
+        public async Task<IActionResult> PutModule([FromRoute] int id, [FromBody] Module @module)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != _module.Code)
+            if (id != @module.Code)
             {
                 return BadRequest();
             }
 
+            _context.Entry(@module).State = EntityState.Modified;
+
             try
             {
-                await _genericRepository.Update(_module);
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -78,40 +84,43 @@ namespace WebAPI.Controllers
 
         // POST: api/Module
         [HttpPost]
-        public IActionResult PostModule([FromBody] Module _module)
+        public async Task<IActionResult> PostModule([FromBody] Module @module)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _genericRepository.Add(_module);
-            return CreatedAtAction("GetModule", new { id = _module.Code }, _module);
+            _context.Module.Add(@module);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetModule", new { id = @module.Code }, @module);
         }
 
         // DELETE: api/Module/5
         [HttpDelete("{id}")]
-        public IActionResult DeleteModule([FromRoute] int id)
+        public async Task<IActionResult> DeleteModule([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var _module = _genericRepository.GetbyId(id);
-            if (_module == null)
+            var @module = await _context.Module.FindAsync(id);
+            if (@module == null)
             {
                 return NotFound();
             }
 
-            _genericRepository.Delete(_module);
+            _context.Module.Remove(@module);
+            await _context.SaveChangesAsync();
 
-            return Ok(_module);
+            return Ok(@module);
         }
 
         private bool ModuleExists(int id)
         {
-            return _genericRepository.Exists(id);
+            return _context.Module.Any(e => e.Code == id);
         }
     }
 }
