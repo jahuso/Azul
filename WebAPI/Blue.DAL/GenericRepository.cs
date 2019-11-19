@@ -51,7 +51,16 @@ namespace Blue.DAL
 
         public bool Exists(int id)
         {
-            return _dbContext.Doctor.Any(e => e.Code == id);
+            //return _dbContext.Doctor.Any(e => e.Code == id);
+            var test = this._dbSet.Find(id);
+            //if (test)return true;
+            //else return false;
+            return (test != null) ? true : false;
+        }
+
+        public bool Exists(string Id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

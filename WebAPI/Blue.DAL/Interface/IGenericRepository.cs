@@ -11,5 +11,6 @@ namespace Blue.DAL.Interface
         Task Update(T entity);
         void Delete(T entity);
         bool Exists(int Id);
+        bool Exists(string Id);
     }
 }

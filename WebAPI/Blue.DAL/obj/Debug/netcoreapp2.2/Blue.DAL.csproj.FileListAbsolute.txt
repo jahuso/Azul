@@ -15,3 +15,11 @@ C:\angular\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfoInp
 C:\angular\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfo.cs
 C:\angular\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.dll
 C:\angular\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.pdb
+C:\pers\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.csprojAssemblyReference.cache
+C:\pers\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfoInputs.cache
+C:\pers\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.AssemblyInfo.cs
+C:\pers\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.dll
+C:\pers\Azul\WebAPI\Blue.DAL\obj\Debug\netcoreapp2.2\Blue.DAL.pdb
+C:\pers\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.deps.json
+C:\pers\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.dll
+C:\pers\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.pdb

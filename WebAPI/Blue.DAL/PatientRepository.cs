@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Blue.DAL
 {
-    public class PatientRepository<T>: GenericRepository<Patient>, IPatientRepository<T> where T : class
+    public class PatientRepository<Patient>
+        //public class DoctorRepository: GenericRepository<Doctor>
     {
         private readonly BlueDBContext _dbContext;
         private readonly DbSet<T> _dbSet;

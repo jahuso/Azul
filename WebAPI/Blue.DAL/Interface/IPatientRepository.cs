@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Blue.DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Blue.DAL.Interface
 {
-    public interface IPatientRepository<T> where T : class
+    public interface IPatientRepository : IGenericRepository<Patient>
     {
-        Task<T> GetbyId(int id);
-        Task<IEnumerable<T>> GetAll();
+        Task<Patient> GetbyId(string id);
+        bool Exists(int Id);
     }
 }

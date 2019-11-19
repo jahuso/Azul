@@ -1,5 +1,6 @@
 ﻿using Blue.DAL;
 using Blue.DAL.Interface;
+using Blue.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -13,7 +14,6 @@ namespace WebAPI.Controllers
     public class PatientController : ControllerBase
     {
         private readonly IGenericRepository<Patient> _genericRepository;
-        private readonly PatientRepository<Patient> _patientRepository;
 
         public PatientController(IGenericRepository<Patient> genericRepository)
         {
@@ -32,7 +32,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Patient>> GetPatient(int id)
         {
-            var patient = await _patientRepository.GetbyId(id);
+            var patient = await _genericRepository.GetbyId(id);
 
             if (patient == null)
             {
@@ -112,7 +112,7 @@ namespace WebAPI.Controllers
             return Ok(patient);
         }
 
-        private bool PatientExists(int id)
+        private bool Exists(int id)
         {
             return _genericRepository.Exists(id);
         }

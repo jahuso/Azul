@@ -1,4 +1,5 @@
 ﻿using Blue.DAL;
+using Blue.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

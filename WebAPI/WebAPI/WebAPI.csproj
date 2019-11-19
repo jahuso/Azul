@@ -12,6 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\ConsultingRoomsController.cs" />
+    <Compile Remove="Controllers\PatientController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

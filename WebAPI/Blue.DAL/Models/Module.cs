@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blue.DAL
+namespace Blue.DAL.Models
 {
     public class Module
     {

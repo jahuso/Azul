@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
 using Blue.DAL.Interface;
 using Blue.DAL;
+using Blue.DAL.Models;
 
 namespace WebAPI.Controllers
 {
@@ -67,7 +68,7 @@ namespace WebAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!DoctorExists(id))
+                if (!Exists(id))
                 {
                     return NotFound();
                 }
@@ -113,7 +114,7 @@ namespace WebAPI.Controllers
             return Ok(doctor);
         }
 
-        private bool DoctorExists(int id)
+        private bool Exists(int id)
         {
             return _genericRepository.Exists(id);
         }
