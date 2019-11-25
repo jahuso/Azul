@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DoctorsContext.cs" />
     <Compile Remove="Interface\IPatientRepository.cs" />
     <Compile Remove="PatientRepository.cs" />
   </ItemGroup>

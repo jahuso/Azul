@@ -28,7 +28,7 @@ namespace WebAPI
                     var resolver = options.SerializerSettings.ContractResolver;
                 });
             services.AddCors();
-            services.AddDbContext<DoctorsContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
+            //services.AddDbContext<DoctorsContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
             services.AddDbContext<ModuleContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
             services.AddDbContext<BlueDBContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString(("DevConnection"))));
             //services.AddTransient<IDoctorRepository, DoctorRepository>();
