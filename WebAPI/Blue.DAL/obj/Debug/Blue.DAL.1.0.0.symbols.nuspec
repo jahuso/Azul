@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Blue.DAL</id>
+    <version>1.0.0</version>
+    <authors>Blue.DAL</authors>
+    <owners>Blue.DAL</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="Microsoft.EntityFrameworkCore" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="2.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.pdb" target="lib\netcoreapp2.2\Blue.DAL.pdb" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\bin\Debug\netcoreapp2.2\Blue.DAL.dll" target="lib\netcoreapp2.2\Blue.DAL.dll" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\BlueContext.cs" target="src\Blue.DAL\BlueContext.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\DoctorRepository.cs" target="src\Blue.DAL\DoctorRepository.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\GenericRepository.cs" target="src\Blue.DAL\GenericRepository.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Interface\IDoctorRepository.cs" target="src\Blue.DAL\Interface\IDoctorRepository.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Interface\IGenericRepository.cs" target="src\Blue.DAL\Interface\IGenericRepository.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190403033330_InitialCreate.cs" target="src\Blue.DAL\Migrations\20190403033330_InitialCreate.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190403033330_InitialCreate.Designer.cs" target="src\Blue.DAL\Migrations\20190403033330_InitialCreate.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190413001104_minimizedb.cs" target="src\Blue.DAL\Migrations\20190413001104_minimizedb.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190413001104_minimizedb.Designer.cs" target="src\Blue.DAL\Migrations\20190413001104_minimizedb.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190413001236_fixphone.cs" target="src\Blue.DAL\Migrations\20190413001236_fixphone.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190413001236_fixphone.Designer.cs" target="src\Blue.DAL\Migrations\20190413001236_fixphone.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909070031_ExtendedDataModel.cs" target="src\Blue.DAL\Migrations\20190909070031_ExtendedDataModel.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909070031_ExtendedDataModel.Designer.cs" target="src\Blue.DAL\Migrations\20190909070031_ExtendedDataModel.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909071446_Initial.cs" target="src\Blue.DAL\Migrations\20190909071446_Initial.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909071446_Initial.Designer.cs" target="src\Blue.DAL\Migrations\20190909071446_Initial.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909195344_Extendedv2.cs" target="src\Blue.DAL\Migrations\20190909195344_Extendedv2.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909195344_Extendedv2.Designer.cs" target="src\Blue.DAL\Migrations\20190909195344_Extendedv2.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909205102_Extendedv5.cs" target="src\Blue.DAL\Migrations\20190909205102_Extendedv5.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\20190909205102_Extendedv5.Designer.cs" target="src\Blue.DAL\Migrations\20190909205102_Extendedv5.Designer.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\BlueDBContextModelSnapshot.cs" target="src\Blue.DAL\Migrations\BlueDBContextModelSnapshot.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Migrations\DoctorsContextModelSnapshot.cs" target="src\Blue.DAL\Migrations\DoctorsContextModelSnapshot.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Appointment.cs" target="src\Blue.DAL\Models\Appointment.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\ClinicHistory.cs" target="src\Blue.DAL\Models\ClinicHistory.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\ConsultingRoom.cs" target="src\Blue.DAL\Models\ConsultingRoom.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Doctor.cs" target="src\Blue.DAL\Models\Doctor.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Evolution.cs" target="src\Blue.DAL\Models\Evolution.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\EvolutionDetail.cs" target="src\Blue.DAL\Models\EvolutionDetail.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\HistoryDetail.cs" target="src\Blue.DAL\Models\HistoryDetail.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Module.cs" target="src\Blue.DAL\Models\Module.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Order.cs" target="src\Blue.DAL\Models\Order.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Patient.cs" target="src\Blue.DAL\Models\Patient.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\PhysicalExam.cs" target="src\Blue.DAL\Models\PhysicalExam.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\Role.cs" target="src\Blue.DAL\Models\Role.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Models\User.cs" target="src\Blue.DAL\Models\User.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\ModuleContext.cs" target="src\Blue.DAL\ModuleContext.cs" />
+    <file src="C:\pers\Azul\WebAPI\Blue.DAL\Blue.DAL.csproj" target="src\Blue.DAL\Blue.DAL.csproj" />
+  </files>
+</package>

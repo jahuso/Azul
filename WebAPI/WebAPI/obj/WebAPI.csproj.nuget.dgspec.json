@@ -4,74 +4,6 @@
     "C:\\pers\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
-        "projectName": "Blue.DAL",
-        "projectPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj",
-        "packagesPath": "C:\\Users\\JOSE GABRIEL AHUMADA\\.nuget\\packages\\",
-        "outputPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\JOSE GABRIEL AHUMADA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/TvcProDriver/_packaging/TVC2MasterFeedPr1/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/mjlofflandtest/_packaging/TVC/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\pers\\Azul\\WebAPI\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -93,17 +25,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\dev\\LocalPackages": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/TvcProDriver/_packaging/TVC2MasterFeedPr1/nuget/v3/index.json": {},
           "https://pkgs.dev.azure.com/mjlofflandtest/_packaging/TVC/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {
-              "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj": {
-                "projectPath": "C:\\pers\\Azul\\WebAPI\\Blue.DAL\\Blue.DAL.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -115,6 +44,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Blue.DAL": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "target": "Package",
               "version": "[2.2.0, )"
