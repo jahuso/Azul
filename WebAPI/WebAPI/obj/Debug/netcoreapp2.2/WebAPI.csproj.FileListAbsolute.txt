@@ -49,3 +49,7 @@ C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
 C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
 C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
+C:\pers\Azul\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\Blue.DAL.dll
+C:\pers\Azul\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\Blue.DAL.pdb
+C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CopyComplete
