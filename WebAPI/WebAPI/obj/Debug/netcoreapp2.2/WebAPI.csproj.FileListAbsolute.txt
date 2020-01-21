@@ -53,3 +53,4 @@ C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReferenc
 C:\pers\Azul\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\Blue.DAL.dll
 C:\pers\Azul\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\Blue.DAL.pdb
 C:\pers\Azul\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CopyComplete
+C:\pers\Azul\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\web.config
